@@ -1,6 +1,16 @@
 {
   "props": [
     {
+      "name": "Ali",
+      "type": "color",
+      "value": "#5A7E4E",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "Tc9oPhnzN"
+      }
+    },
+    {
       "name": "Primary color",
       "type": "color",
       "value": "#189085",

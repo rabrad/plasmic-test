@@ -34,15 +34,11 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button from "../../Button"; // plasmic-import: lnqd9ErfP5U/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_plasmic_test.module.css"; // plasmic-import: b1jHtzznz5qfWCWxvSbcUi/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: oC9KOZtsJNg9/css
-
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: GX4aUrHbReI/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: lAPalT-xsgR/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -56,9 +52,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
-  text?: p.Flex<"div">;
-  button?: p.Flex<typeof Button>;
+  columns?: p.Flex<"div">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultHomepageProps {}
@@ -102,25 +97,21 @@ function PlasmicHomepage__RenderFunc(props: {
           )}
         >
           <h1
-            data-plasmic-name={"h1"}
-            data-plasmic-override={overrides.h1}
             className={classNames(
               projectcss.all,
               projectcss.h1,
               projectcss.__wab_text,
-              sty.h1
+              sty.h1__ocutn
             )}
           >
             {"Welcome to your first page."}
           </h1>
 
           <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text
+              sty.text__lJpTh
             )}
           >
             <React.Fragment>
@@ -143,11 +134,57 @@ function PlasmicHomepage__RenderFunc(props: {
             </React.Fragment>
           </div>
 
-          <Button
-            data-plasmic-name={"button"}
-            data-plasmic-override={overrides.button}
-            className={classNames("__wab_instance", sty.button)}
-          />
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.columns)}
+          >
+            <div className={classNames(projectcss.all, sty.column__wVrxy)}>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__kM76W
+                )}
+              >
+                {"Welcome to your first page."}
+              </h1>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__oxE5Z
+                )}
+              >
+                {
+                  "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial. It's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\nOr press the big blue + button to start dragging items into this page. ntegrate this project into your codebase—press the  Code  button in the top right and follow the quickstart instructions.\nJoin our Slack community (icon in bottom left) for help any time.\n"
+                }
+              </div>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__aQtW)}>
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={
+                  "https://images.unsplash.com/photo-1648310090412-368b0f657e9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" as const
+                }
+              />
+            </div>
+          </p.Stack>
         </p.Stack>
       </div>
     </React.Fragment>
@@ -155,19 +192,17 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1", "text", "button"],
-  h1: ["h1"],
-  text: ["text"],
-  button: ["button"]
+  root: ["root", "columns", "img"],
+  columns: ["columns", "img"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  h1: "h1";
-  text: "div";
-  button: typeof Button;
+  columns: "div";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -227,9 +262,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
-    button: makeNodeComponent("button"),
+    columns: makeNodeComponent("columns"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
