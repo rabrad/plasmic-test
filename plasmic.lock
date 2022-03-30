@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+      "version": "latest",
+      "dependencies": {},
+      "lang": "ts",
+      "fileLocks": [
+        {
+          "type": "globalVariant",
+          "assetId": "ttBNf_5qNnjj2",
+          "checksum": "b735f2427bceea90d4e8da3b6328a00a"
+        },
+        {
+          "assetId": "b1jHtzznz5qfWCWxvSbcUi",
+          "type": "projectCss",
+          "checksum": "e74f54714e6174fca4ca1771eac99dce"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "oC9KOZtsJNg9",
+          "checksum": "68454c1a501001536ea898d26277dc11"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "oC9KOZtsJNg9",
+          "checksum": "68454c1a501001536ea898d26277dc11"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "MpF9-nqW6l",
+          "checksum": "cd60f74069c1d29b93d4e293fc4afe8c"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "MpF9-nqW6l",
+          "checksum": "cd60f74069c1d29b93d4e293fc4afe8c"
+        },
+        {
+          "type": "renderModule",
+          "assetId": "lnqd9ErfP5U",
+          "checksum": "80eada4d80eb30307cf9008307b6abf2"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "lnqd9ErfP5U",
+          "checksum": "80eada4d80eb30307cf9008307b6abf2"
+        },
+        {
+          "type": "icon",
+          "assetId": "06sqnCvGttSRK",
+          "checksum": "345fe28b2a7eed186ccddfb8a3747451"
+        },
+        {
+          "type": "icon",
+          "assetId": "7TwBb5bVIMNBP",
+          "checksum": "df117a1dd8d9f9ea0954b4d929434a3d"
+        },
+        {
+          "type": "icon",
+          "assetId": "GX4aUrHbReI",
+          "checksum": "7622f5c40f520bbbff94ced0e12f24f5"
+        },
+        {
+          "type": "icon",
+          "assetId": "lAPalT-xsgR",
+          "checksum": "c0d604800cd5d5cbb80332e484fc27d7"
+        },
+        {
+          "type": "image",
+          "assetId": "ZiesuSfx-Lua5",
+          "checksum": "5607cfaa15d0139d368fc89867a436e0"
+        }
+      ],
+      "codegenVersion": "0.0.1"
+    }
+  ],
+  "cliVersion": "0.1.176"
+}
