@@ -113,6 +113,42 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             <p.PlasmicImg
               alt={""}
+              className={classNames(sty.img__i3B0)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/blueHeropng.png",
+                fullWidth: 419,
+                fullHeight: 313,
+                aspectRatio: undefined
+              }}
+            />
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__tuMw)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/bluePremiumHeropng.png",
+                fullWidth: 423,
+                fullHeight: 323,
+                aspectRatio: undefined
+              }}
+            />
+
+            <p.PlasmicImg
+              alt={""}
               className={classNames(sty.img__zrXnr)}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")
@@ -158,7 +194,11 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__cskK0)}
-              displayHeight={"300px" as const}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("207px" as const)
+                  : ("300px" as const)
+              }
               displayMaxHeight={"none" as const}
               displayMaxWidth={"100%" as const}
               displayMinHeight={"0" as const}
@@ -169,42 +209,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 src: "/plasmic/plasmic_test/images/pfeil11Png.png",
                 fullWidth: 473,
                 fullHeight: 423,
-                aspectRatio: undefined
-              }}
-            />
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__i3B0)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/plasmic_test/images/blueHeropng.png",
-                fullWidth: 419,
-                fullHeight: 313,
-                aspectRatio: undefined
-              }}
-            />
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__tuMw)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/plasmic_test/images/bluePremiumHeropng.png",
-                fullWidth: 423,
-                fullHeight: 323,
                 aspectRatio: undefined
               }}
             />
