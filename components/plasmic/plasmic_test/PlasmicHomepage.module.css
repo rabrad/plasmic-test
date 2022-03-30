@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  background: none;
   min-width: 0;
   min-height: 0;
   padding: 96px 24px;
@@ -30,6 +31,8 @@
   max-width: 1095px;
   margin-bottom: 32px;
   color: var(--token--p0JnavKF);
+  left: auto;
+  top: auto;
   min-width: 0;
 }
 .text__lJpTh {
@@ -37,6 +40,8 @@
   width: 100%;
   height: auto;
   max-width: 1104px;
+  left: auto;
+  top: auto;
   min-width: 0;
 }
 .columns {
@@ -47,7 +52,9 @@
   height: auto;
   flex-shrink: 1;
   max-width: 1107px;
-  margin-top: calc(104px + 16px) !important;
+  margin-top: calc(42px + 16px) !important;
+  left: auto;
+  top: auto;
   min-width: 0;
   padding: 8px;
 }
@@ -80,7 +87,7 @@
     width: 100%;
     height: auto;
     flex-direction: row;
-    margin-top: calc(104px + 16px) !important;
+    margin-top: calc(42px + 16px) !important;
     min-width: 0;
   }
 }
@@ -146,4 +153,69 @@
 }
 .img > .__wab_img-spacer > img {
   object-fit: cover;
+}
+.freeBox__qyHOp {
+  display: block;
+  position: relative;
+  width: 1460px;
+  height: 381px;
+  max-width: 100%;
+  background: none;
+  left: auto;
+  top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  overflow: visible;
+  flex-shrink: 0;
+  padding: 0px 8px 8px;
+}
+.freeBox___0QcBj {
+  display: block;
+  position: absolute;
+  width: 1750px;
+  height: 350px;
+  max-width: 100%;
+  left: -13px;
+  top: 8px;
+  overflow: visible;
+  padding: 8px;
+}
+.svg__s7NWc {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 204px;
+  top: 18px;
+  width: 48px;
+  height: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__s7NWc {
+    left: 305px;
+    top: 12px;
+  }
+}
+.svg__ixGmf {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 40px;
+  top: 29px;
+  width: 48px;
+  height: 48px;
+}
+.svg__ho0Gl {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 1326px;
+  top: 275px;
+  width: 48px;
+  height: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .svg__ho0Gl {
+    left: 316px;
+    top: 289px;
+  }
 }

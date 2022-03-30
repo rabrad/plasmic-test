@@ -185,6 +185,25 @@ function PlasmicHomepage__RenderFunc(props: {
               />
             </div>
           </p.Stack>
+
+          <div className={classNames(projectcss.all, sty.freeBox__qyHOp)}>
+            <div className={classNames(projectcss.all, sty.freeBox___0QcBj)}>
+              <svg
+                className={classNames(projectcss.all, sty.svg__s7NWc)}
+                role={"img"}
+              />
+
+              <svg
+                className={classNames(projectcss.all, sty.svg__ixGmf)}
+                role={"img"}
+              />
+
+              <svg
+                className={classNames(projectcss.all, sty.svg__ho0Gl)}
+                role={"img"}
+              />
+            </div>
+          </div>
         </p.Stack>
       </div>
     </React.Fragment>
