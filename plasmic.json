@@ -96,6 +96,46 @@
           "id": "ZiesuSfx-Lua5",
           "name": "image.png",
           "filePath": "../public/plasmic/plasmic_test/images/imagepng.jpeg"
+        },
+        {
+          "id": "plMgxT8eI",
+          "name": "Pfeil1 1.png",
+          "filePath": "../public/plasmic/plasmic_test/images/pfeil11Png.png"
+        },
+        {
+          "id": "LvVuirZ4k",
+          "name": "blue-hero.png",
+          "filePath": "../public/plasmic/plasmic_test/images/blueHeropng.png"
+        },
+        {
+          "id": "op_LfrNGk",
+          "name": "boom-hero.png",
+          "filePath": "../public/plasmic/plasmic_test/images/boomHeropng.png"
+        },
+        {
+          "id": "UhwL_RqzT",
+          "name": "boy-hero.png",
+          "filePath": "../public/plasmic/plasmic_test/images/boyHeropng.png"
+        },
+        {
+          "id": "kRbqdlGkY",
+          "name": "girl-hero.png",
+          "filePath": "../public/plasmic/plasmic_test/images/girlHeropng.png"
+        },
+        {
+          "id": "1qVGPT_bB",
+          "name": "graphity-hero.png",
+          "filePath": "../public/plasmic/plasmic_test/images/graphityHeropng.png"
+        },
+        {
+          "id": "b287TMXWS",
+          "name": "hero-bg.png",
+          "filePath": "../public/plasmic/plasmic_test/images/heroBgpng.png"
+        },
+        {
+          "id": "dHeGZKUk4",
+          "name": "blue-premium-hero.png",
+          "filePath": "../public/plasmic/plasmic_test/images/bluePremiumHeropng.png"
         }
       ],
       "indirect": false,

@@ -34,11 +34,17 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Button from "../../Button"; // plasmic-import: lnqd9ErfP5U/component
+
+import { useScreenVariants as useScreenVariantsttBNf5QNnjj2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ttBNf_5qNnjj2/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_plasmic_test.module.css"; // plasmic-import: b1jHtzznz5qfWCWxvSbcUi/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: oC9KOZtsJNg9/css
+
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: GX4aUrHbReI/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: lAPalT-xsgR/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -52,8 +58,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  columns?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
+  freeBox?: p.Flex<"div">;
+  button?: p.Flex<typeof Button>;
 };
 
 export interface DefaultHomepageProps {}
@@ -66,6 +72,10 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsttBNf5QNnjj2()
+  });
 
   return (
     <React.Fragment>
@@ -96,113 +106,176 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <h1
-            className={classNames(
-              projectcss.all,
-              projectcss.h1,
-              projectcss.__wab_text,
-              sty.h1__ocutn
-            )}
-          >
-            {"Welcome to your first page."}
-          </h1>
-
           <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__lJpTh
-            )}
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
           >
-            <React.Fragment>
-              <React.Fragment>
-                {
-                  "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\n\nOr press the big blue + button to start dragging items into this page.\n\nIntegrate this project into your codebase—press the "
-                }
-              </React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ fontWeight: 700 }}
-              >
-                {"Code"}
-              </span>
-              <React.Fragment>
-                {
-                  " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
-                }
-              </React.Fragment>
-            </React.Fragment>
-          </div>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__zrXnr)}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("299px" as const)
+                  : ("auto" as const)
+              }
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/boyHeropng.png",
+                fullWidth: 404,
+                fullHeight: 685,
+                aspectRatio: undefined
+              }}
+            />
 
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"columns"}
-            data-plasmic-override={overrides.columns}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.columns)}
-          >
-            <div className={classNames(projectcss.all, sty.column__wVrxy)}>
-              <h1
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1__kM76W
-                )}
-              >
-                {"Welcome to your first page."}
-              </h1>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__u9X5R)}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("258px" as const)
+                  : ("auto" as const)
+              }
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/girlHeropng.png",
+                fullWidth: 506,
+                fullHeight: 590,
+                aspectRatio: undefined
+              }}
+            />
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__oxE5Z
-                )}
-              >
-                {
-                  "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial. It's always easier to start from examples! Add a new page using a template—do this from the list of pages in the top left (the gray + button).\nOr press the big blue + button to start dragging items into this page. ntegrate this project into your codebase—press the  Code  button in the top right and follow the quickstart instructions.\nJoin our Slack community (icon in bottom left) for help any time.\n"
-                }
-              </div>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__cskK0)}
+              displayHeight={"300px" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/pfeil11Png.png",
+                fullWidth: 473,
+                fullHeight: 423,
+                aspectRatio: undefined
+              }}
+            />
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__i3B0)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/blueHeropng.png",
+                fullWidth: 419,
+                fullHeight: 313,
+                aspectRatio: undefined
+              }}
+            />
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__tuMw)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/bluePremiumHeropng.png",
+                fullWidth: 423,
+                fullHeight: 323,
+                aspectRatio: undefined
+              }}
+            />
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img___28EZd)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/graphityHeropng.png",
+                fullWidth: 382,
+                fullHeight: 419,
+                aspectRatio: undefined
+              }}
+            />
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img___9W3V8)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/boomHeropng.png",
+                fullWidth: 359,
+                fullHeight: 295,
+                aspectRatio: undefined
+              }}
+            />
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__id0J2
+              )}
+            >
+              {hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "Bluecard Mastercard® Debitkarte"
+                : "Bluecard Mastercard® Debitkarte"}
             </div>
 
-            <div className={classNames(projectcss.all, sty.column__aQtW)}>
-              <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
-                alt={""}
-                className={classNames(sty.img)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={
-                  "https://images.unsplash.com/photo-1648310090412-368b0f657e9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" as const
-                }
-              />
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__hRed
+              )}
+            >
+              {
+                "Keine Bonitätsprüfung. \nJederzeit kündbar. \nIn wenigen Tagen bei dir! "
+              }
             </div>
-          </p.Stack>
 
-          <div className={classNames(projectcss.all, sty.freeBox__qyHOp)}>
-            <div className={classNames(projectcss.all, sty.freeBox___0QcBj)}>
-              <svg
-                className={classNames(projectcss.all, sty.svg__s7NWc)}
-                role={"img"}
-              />
-
-              <svg
-                className={classNames(projectcss.all, sty.svg__ixGmf)}
-                role={"img"}
-              />
-
-              <svg
-                className={classNames(projectcss.all, sty.svg__ho0Gl)}
-                role={"img"}
-              />
-            </div>
+            <Button
+              data-plasmic-name={"button"}
+              data-plasmic-override={overrides.button}
+              className={classNames("__wab_instance", sty.button)}
+            >
+              {"JETZT BESTELLEN"}
+            </Button>
           </div>
         </p.Stack>
       </div>
@@ -211,17 +284,17 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "img"],
-  columns: ["columns", "img"],
-  img: ["img"]
+  root: ["root", "freeBox", "button"],
+  freeBox: ["freeBox", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  columns: "div";
-  img: typeof p.PlasmicImg;
+  freeBox: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -281,8 +354,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    columns: makeNodeComponent("columns"),
-    img: makeNodeComponent("img"),
+    freeBox: makeNodeComponent("freeBox"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

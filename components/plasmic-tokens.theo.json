@@ -11,6 +11,26 @@
       }
     },
     {
+      "name": "Montserrat",
+      "type": "fontfamily",
+      "value": "Montserrat",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "xlnrwlRpD"
+      }
+    },
+    {
+      "name": "Primary",
+      "type": "color",
+      "value": "#ED3D1B",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "cZnSN_WNC"
+      }
+    },
+    {
       "name": "Primary color",
       "type": "color",
       "value": "#189085",
@@ -18,6 +38,16 @@
       "meta": {
         "projectId": "b1jHtzznz5qfWCWxvSbcUi",
         "id": "3rYBaIIGm"
+      }
+    },
+    {
+      "name": "Secondary",
+      "type": "color",
+      "value": "#022548",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "d9VyYp1ri"
       }
     },
     {

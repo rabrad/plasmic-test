@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Permanent+Marker%3Aital%2Cwght%400%2C400&family=Montserrat%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&display=swap");
 
 .plasmic_tokens {
-  --token-3rYBaIIGm: #189085;
-  --plasmic-token-primary-color: var(--token-3rYBaIIGm);
-  --token--p0JnavKF: #9c48e7;
-  --plasmic-token-secondary-color: var(--token--p0JnavKF);
-  --token-Tc9oPhnzN: #5a7e4e;
-  --plasmic-token-ali: var(--token-Tc9oPhnzN);
+  --token-d9VyYp1ri: #022548;
+  --plasmic-token-secondary: var(--token-d9VyYp1ri);
+  --token-cZnSN_WNC: #ed3d1b;
+  --plasmic-token-primary: var(--token-cZnSN_WNC);
+  --token-xlnrwlRpD: Montserrat;
+  --plasmic-token-montserrat: var(--token-xlnrwlRpD);
 }
 
 .plasmic_default_styles {
