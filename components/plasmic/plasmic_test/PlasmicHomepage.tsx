@@ -34,8 +34,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Button from "../../Button"; // plasmic-import: lnqd9ErfP5U/component
+import Test from "../../Test"; // plasmic-import: MpF9-nqW6l/component
 
+import { LocaleValue, useLocale } from "./PlasmicGlobalVariant__Locale"; // plasmic-import: AFXGsilAZy/globalVariant
 import { useScreenVariants as useScreenVariantsttBNf5QNnjj2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ttBNf_5qNnjj2/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -43,8 +44,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_plasmic_test.module.css"; // plasmic-import: b1jHtzznz5qfWCWxvSbcUi/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: oC9KOZtsJNg9/css
 
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: GX4aUrHbReI/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: lAPalT-xsgR/icon
+import LogosvgIcon from "./icons/PlasmicIcon__Logosvg"; // plasmic-import: FubHFUMaY/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 
@@ -58,8 +58,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
-  freeBox?: p.Flex<"div">;
-  button?: p.Flex<typeof Button>;
+  svg?: p.Flex<"svg">;
+  test?: p.Flex<typeof Test>;
 };
 
 export interface DefaultHomepageProps {}
@@ -74,14 +74,13 @@ function PlasmicHomepage__RenderFunc(props: {
   const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
+    locale: useLocale(),
     screen: useScreenVariantsttBNf5QNnjj2()
   });
 
   return (
     <React.Fragment>
-      <Head>
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      {}
 
       <style>{`
         body {
@@ -103,49 +102,122 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            sty.root
+            sty.root,
+            {
+              [sty.rootglobal_locale_deDe]: hasVariant(
+                globalVariants,
+                "locale",
+                "deDe"
+              ),
+              [sty.rootglobal_locale_enUs]: hasVariant(
+                globalVariants,
+                "locale",
+                "enUs"
+              )
+            }
           )}
         >
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__i3B0)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/plasmic_test/images/blueHeropng.png",
-                fullWidth: 419,
-                fullHeight: 313,
-                aspectRatio: undefined
-              }}
-            />
+          <div className={classNames(projectcss.all, sty.columns__yoMzo)}>
+            <div className={classNames(projectcss.all, sty.column__z9Xcm)}>
+              <LogosvgIcon
+                data-plasmic-name={"svg"}
+                data-plasmic-override={overrides.svg}
+                className={classNames(projectcss.all, sty.svg)}
+                role={"img"}
+              />
+            </div>
 
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__tuMw)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/plasmic_test/images/bluePremiumHeropng.png",
-                fullWidth: 423,
-                fullHeight: 323,
-                aspectRatio: undefined
-              }}
-            />
+            <div className={classNames(projectcss.all, sty.column__wcJ9)}>
+              <div className={classNames(projectcss.all, sty.columns__eHcf)}>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.column__oLiCk)}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__mbdrM
+                      )}
+                      component={Link}
+                      href={"https://www.plasmic.app/" as const}
+                      platform={"nextjs"}
+                    >
+                      {"KUNDENSERVICE"}
+                    </p.PlasmicLink>
+                  </div>
+                ) : null}
+
+                <div className={classNames(projectcss.all, sty.column__vjLjs)}>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__wkHeZ
+                    )}
+                    component={Link}
+                    href={"https://www.plasmic.app/" as const}
+                    platform={"nextjs"}
+                  >
+                    {"LOGIN"}
+                  </p.PlasmicLink>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={classNames(projectcss.all, sty.freeBox___0QcBj, {
+              [sty.freeBoxglobal_locale_deDe___0QcBjEtaQx]: hasVariant(
+                globalVariants,
+                "locale",
+                "deDe"
+              )
+            })}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__ac8Zw)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___7YdvH)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/plasmic_test/images/blueHeropng.png",
+                  fullWidth: 419,
+                  fullHeight: 313,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__cdwqQ)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/plasmic_test/images/bluePremiumHeropng.png",
+                  fullWidth: 423,
+                  fullHeight: 323,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
 
             <p.PlasmicImg
               alt={""}
@@ -171,7 +243,13 @@ function PlasmicHomepage__RenderFunc(props: {
 
             <p.PlasmicImg
               alt={""}
-              className={classNames(sty.img__u9X5R)}
+              className={classNames(sty.img__u9X5R, {
+                [sty.imgglobal_locale_enUs__u9X5RRDeE]: hasVariant(
+                  globalVariants,
+                  "locale",
+                  "enUs"
+                )
+              })}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? ("258px" as const)
@@ -213,52 +291,25 @@ function PlasmicHomepage__RenderFunc(props: {
               }}
             />
 
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img___28EZd)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/plasmic_test/images/graphityHeropng.png",
-                fullWidth: 382,
-                fullHeight: 419,
-                aspectRatio: undefined
-              }}
-            />
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img___9W3V8)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/plasmic_test/images/boomHeropng.png",
-                fullWidth: 359,
-                fullHeight: 295,
-                aspectRatio: undefined
-              }}
-            />
-
             <div
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__id0J2
+                sty.text__id0J2,
+                {
+                  [sty.textglobal_locale_deDe__id0J2EtaQx]: hasVariant(
+                    globalVariants,
+                    "locale",
+                    "deDe"
+                  )
+                }
               )}
             >
-              {hasVariant(globalVariants, "screen", "mobileOnly")
+              {hasVariant(globalVariants, "locale", "deDe")
+                ? "DE"
+                : hasVariant(globalVariants, "screen", "mobileOnly")
                 ? "Bluecard Mastercard® Debitkarte"
-                : "Bluecard Mastercard® Debitkarte"}
+                : "Bluecard Mastercard® Debitkarte!"}
             </div>
 
             <div
@@ -273,13 +324,50 @@ function PlasmicHomepage__RenderFunc(props: {
               }
             </div>
 
-            <Button
-              data-plasmic-name={"button"}
-              data-plasmic-override={overrides.button}
-              className={classNames("__wab_instance", sty.button)}
-            >
-              {"JETZT BESTELLEN"}
-            </Button>
+            <Test
+              data-plasmic-name={"test"}
+              data-plasmic-override={overrides.test}
+              className={classNames("__wab_instance", sty.test)}
+              type={"primary" as const}
+            />
+
+            <div className={classNames(projectcss.all, sty.freeBox__wZcQo)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__eBjr)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/plasmic_test/images/graphityHeropng.png",
+                  fullWidth: 382,
+                  fullHeight: 419,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__dx1U)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/plasmic_test/images/boomHeropng.png",
+                  fullWidth: 359,
+                  fullHeight: 295,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
           </div>
         </p.Stack>
       </div>
@@ -288,17 +376,17 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "button"],
-  freeBox: ["freeBox", "button"],
-  button: ["button"]
+  root: ["root", "svg", "test"],
+  svg: ["svg"],
+  test: ["test"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  freeBox: "div";
-  button: typeof Button;
+  svg: "svg";
+  test: typeof Test;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -358,8 +446,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
-    button: makeNodeComponent("button"),
+    svg: makeNodeComponent("svg"),
+    test: makeNodeComponent("test"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

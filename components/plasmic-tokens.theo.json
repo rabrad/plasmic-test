@@ -59,6 +59,16 @@
         "projectId": "b1jHtzznz5qfWCWxvSbcUi",
         "id": "-p0JnavKF"
       }
+    },
+    {
+      "name": "Text color",
+      "type": "color",
+      "value": "#535353",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "tDlCqWJO0"
+      }
     }
   ],
   "global": {

@@ -108,6 +108,7 @@ function PlasmicTest__RenderFunc(props: {
             ? ("blue" as const)
             : undefined
         }
+        shape={"sharp" as const}
       >
         <div
           data-plasmic-name={"text"}
@@ -119,7 +120,7 @@ function PlasmicTest__RenderFunc(props: {
             { [sty.texttype_primary]: hasVariant(variants, "type", "primary") }
           )}
         >
-          {"Button"}
+          {hasVariant(variants, "type", "primary") ? "Button" : "Button"}
         </div>
       </Button>
     </div>
