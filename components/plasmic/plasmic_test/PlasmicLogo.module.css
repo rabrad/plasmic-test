@@ -1,0 +1,19 @@
+.root {
+  display: block;
+  width: 213px;
+  max-width: 100%;
+  height: 53px;
+  background: none;
+  color: var(--token-d9VyYp1ri);
+  position: relative;
+  padding: 8px;
+}
+.svg {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 8px;
+  top: 10px;
+  width: 193px;
+  height: 33px;
+}

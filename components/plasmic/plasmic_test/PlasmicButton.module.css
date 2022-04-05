@@ -2,12 +2,13 @@
   flex-direction: row;
   display: flex;
   position: relative;
-  background: #232320;
+  background: var(--token-cZnSN_WNC);
   cursor: pointer;
   transition-property: background;
   transition-duration: 0.1s;
-  border-radius: 6px;
-  padding: 12px 20px;
+  box-shadow: 6px 6px 0px 0px #ffffff;
+  border-radius: 0px;
+  padding: 12px 24px;
   border-width: 0px;
 }
 .root > :global(.__wab_flex-container) {
@@ -65,6 +66,14 @@
 .rootcolor_link {
   background: #ffffff00;
 }
+.roottype_primary {
+  background: var(--token-cZnSN_WNC);
+}
+.roottype_secondary {
+  background: var(--token-DdSr8gtxt);
+  height: auto;
+  box-shadow: 6px 6px 0px 0px var(--token-cZnSN_WNC);
+}
 .rootisDisabled {
   cursor: not-allowed;
   opacity: 0.6;
@@ -101,7 +110,7 @@
   padding-right: 16px;
 }
 .root:hover {
-  background: #282826;
+  background: var(--token-cZnSN_WNC);
 }
 .rootcolor_green:hover {
   background: #3cb179;
@@ -143,15 +152,15 @@
   background: #369eff;
 }
 .root:focus-within {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: none;
   outline: none;
 }
 .root___focusVisibleWithin {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: none;
   outline: none;
 }
 .root:active {
-  background: #2e2e2b;
+  background: var(--token-cZnSN_WNC);
 }
 .rootcolor_green:active {
   background: #4cc38a;
@@ -256,9 +265,11 @@
   outline: none;
 }
 .slotTargetChildren {
-  color: #ededec;
+  color: var(--token-DdSr8gtxt);
   font-weight: 500;
   white-space: pre;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .slotTargetChildrencolor_green {
   color: #ffffff;
@@ -296,8 +307,35 @@
 .slotTargetChildrencolor_link {
   color: #0091ff;
 }
+.slotTargetChildrentype_secondary {
+  color: var(--token-d9VyYp1ri);
+}
 .slotTargetChildrencolor_blue {
   color: #ffffff;
+}
+.root:hover .slotTargetChildren > .__wab_text,
+.root:hover .slotTargetChildren > .__wab_slot-string-wrapper,
+.root:hover .slotTargetChildren > .__wab_slot > .__wab_text,
+.root:hover .slotTargetChildren > .__wab_slot > .__wab_slot-string-wrapper,
+.root:hover .slotTargetChildren > .__wab_slot > .__wab_slot > .__wab_text,
+.root:hover
+  .slotTargetChildren
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper,
+.root:hover
+  .slotTargetChildren
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_text,
+.root:hover
+  .slotTargetChildren
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper {
+  text-decoration-line: underline;
 }
 .rootcolor_link:hover .slotTargetChildrencolor_link {
   color: #0081f1;

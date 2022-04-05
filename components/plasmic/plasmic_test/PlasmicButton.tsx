@@ -63,6 +63,7 @@ export type PlasmicButton__VariantMembers = {
     | "softSand"
     | "clear"
     | "link";
+  type: "primary" | "secondary";
 };
 
 export type PlasmicButton__VariantsArgs = {
@@ -86,6 +87,7 @@ export type PlasmicButton__VariantsArgs = {
     | "clear"
     | "link"
   >;
+  type?: SingleChoiceArg<"primary" | "secondary">;
 };
 
 type VariantPropType = keyof PlasmicButton__VariantsArgs;
@@ -95,7 +97,8 @@ export const PlasmicButton__VariantProps = new Array<VariantPropType>(
   "isDisabled",
   "shape",
   "size",
-  "color"
+  "color",
+  "type"
 );
 
 export type PlasmicButton__ArgsType = {
@@ -138,6 +141,7 @@ export interface DefaultButtonProps extends pp.BaseButtonProps {
     | "clear"
     | "link"
   >;
+  type?: SingleChoiceArg<"primary" | "secondary">;
 }
 
 function PlasmicButton__RenderFunc(props: {
@@ -237,7 +241,9 @@ function PlasmicButton__RenderFunc(props: {
           [sty.rootsize_minimal]: hasVariant(variants, "size", "minimal"),
           [sty.rootsize_minimal_color_link]:
             hasVariant(variants, "color", "link") &&
-            hasVariant(variants, "size", "minimal")
+            hasVariant(variants, "size", "minimal"),
+          [sty.roottype_primary]: hasVariant(variants, "type", "primary"),
+          [sty.roottype_secondary]: hasVariant(variants, "type", "secondary")
         }
       )}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
@@ -358,7 +364,7 @@ function PlasmicButton__RenderFunc(props: {
         })}
       >
         {p.renderPlasmicSlot({
-          defaultContents: "Button",
+          defaultContents: "JETZT BESTELLEN",
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
             [sty.slotTargetChildren___focusVisibleWithin]:
@@ -455,7 +461,12 @@ function PlasmicButton__RenderFunc(props: {
             ),
             [sty.slotTargetChildrensize_minimal_color_link]:
               hasVariant(variants, "color", "link") &&
-              hasVariant(variants, "size", "minimal")
+              hasVariant(variants, "size", "minimal"),
+            [sty.slotTargetChildrentype_secondary]: hasVariant(
+              variants,
+              "type",
+              "secondary"
+            )
           })
         })}
       </div>

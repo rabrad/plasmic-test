@@ -41,6 +41,16 @@
       }
     },
     {
+      "name": "Primary light",
+      "type": "color",
+      "value": "#EA5538",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "OqMXzpr8v"
+      }
+    },
+    {
       "name": "Secondary",
       "type": "color",
       "value": "#022548",
@@ -63,11 +73,31 @@
     {
       "name": "Text color",
       "type": "color",
-      "value": "#535353",
+      "value": "#000000",
       "category": "color",
       "meta": {
         "projectId": "b1jHtzznz5qfWCWxvSbcUi",
         "id": "tDlCqWJO0"
+      }
+    },
+    {
+      "name": "White",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "DdSr8gtxt"
+      }
+    },
+    {
+      "name": "grey10",
+      "type": "color",
+      "value": "#E8E8E8",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "BrdtHRevv"
       }
     }
   ],

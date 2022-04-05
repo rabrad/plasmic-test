@@ -10,23 +10,17 @@
 .button:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  width: 170px;
-  height: 54px;
-  flex-shrink: 0;
 }
-.svg__nSuc5 {
+.svg__hkBnr {
   position: relative;
   object-fit: cover;
   width: 1em;
   height: 1em;
 }
-.text {
-  font-size: 20px;
-}
 .texttype_primary {
-  color: #ffffff;
+  color: var(--token-DdSr8gtxt);
 }
-.svg__tom9B {
+.svg___9SMe8 {
   position: relative;
   object-fit: cover;
   width: 1em;
