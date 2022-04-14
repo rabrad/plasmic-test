@@ -38,6 +38,12 @@ import Logo from "../../Logo"; // plasmic-import: TmaXwBUdb0/component
 import Button from "../../Button"; // plasmic-import: lnqd9ErfP5U/component
 import BenefitsCardWithIcon from "../../BenefitsCardWithIcon"; // plasmic-import: gACe1O_O0u/component
 import PackagesSections from "../../PackagesSections"; // plasmic-import: 8MORm4CsJp/component
+import InfoIconText from "../../InfoIconText"; // plasmic-import: hPX9FO2ErV/component
+import RedLink from "../../RedLink"; // plasmic-import: XRqk_ZzmpW/component
+import ComparisonTableCard from "../../ComparisonTableCard"; // plasmic-import: 1ThabWFZHA/component
+import ComparisonTableRow from "../../ComparisonTableRow"; // plasmic-import: TciHbiRyoi/component
+import { CompprYoawes6D } from ""; // plasmic-import: prYoawes6d/codeComponent
+import { CompXpMnCrayC } from ""; // plasmic-import: XPMnCray-c/codeComponent
 
 import { useScreenVariants as useScreenVariantsttBNf5QNnjj2 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ttBNf_5qNnjj2/globalVariant
 
@@ -54,6 +60,15 @@ import PrivacyIconsvgIcon from "./icons/PlasmicIcon__PrivacyIconsvg"; // plasmic
 import MasterCardIconsvgIcon from "./icons/PlasmicIcon__MasterCardIconsvg"; // plasmic-import: KbRrj-8yN/icon
 import CardPayIconsvgIcon from "./icons/PlasmicIcon__CardPayIconsvg"; // plasmic-import: z-ZV8UwMi/icon
 import DiamondIconsvgIcon from "./icons/PlasmicIcon__DiamondIconsvg"; // plasmic-import: n1y1U6inZ/icon
+import Section8Icon1SvgIcon from "./icons/PlasmicIcon__Section8Icon1Svg"; // plasmic-import: wPntU_KHu/icon
+import Section8Icon2SvgIcon from "./icons/PlasmicIcon__Section8Icon2Svg"; // plasmic-import: NiTNl6egg/icon
+import Section8Icon3SvgIcon from "./icons/PlasmicIcon__Section8Icon3Svg"; // plasmic-import: vTbzVlJuR/icon
+import Section8Icon4AsvgIcon from "./icons/PlasmicIcon__Section8Icon4Asvg"; // plasmic-import: mYN6LrPP0/icon
+import Section8Icon5AsvgIcon from "./icons/PlasmicIcon__Section8Icon5Asvg"; // plasmic-import: wObOM94cD/icon
+import Section8Icon6AsvgIcon from "./icons/PlasmicIcon__Section8Icon6Asvg"; // plasmic-import: xatTaGG_J/icon
+import Section8Icon4BsvgIcon from "./icons/PlasmicIcon__Section8Icon4Bsvg"; // plasmic-import: 8ZBL7JeNm/icon
+import Section8Icon5BsvgIcon from "./icons/PlasmicIcon__Section8Icon5Bsvg"; // plasmic-import: ojh8kIx7p/icon
+import Section8Icon6BsvgIcon from "./icons/PlasmicIcon__Section8Icon6Bsvg"; // plasmic-import: mt0C_tznX/icon
 
 export type PlasmicTestDe__VariantMembers = {};
 
@@ -71,6 +86,12 @@ export type PlasmicTestDe__OverridesType = {
   testSection?: p.Flex<"div">;
   packagesSections?: p.Flex<typeof PackagesSections>;
   packagesSection2?: p.Flex<"div">;
+  section5?: p.Flex<"div">;
+  section6?: p.Flex<"div">;
+  section7?: p.Flex<"div">;
+  section8?: p.Flex<"div">;
+  dsFooter?: p.Flex<typeof CompprYoawes6D>;
+  dsNav?: p.Flex<typeof CompXpMnCrayC>;
 };
 
 export interface DefaultTestDeProps {}
@@ -83,6 +104,7 @@ function PlasmicTestDe__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsttBNf5QNnjj2()
@@ -90,7 +112,11 @@ function PlasmicTestDe__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      {}
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{"Test"}</title>
+        <meta key="og:title" property="og:title" content={"Test"} />
+      </Head>
 
       <style>{`
         body {
@@ -115,65 +141,74 @@ function PlasmicTestDe__RenderFunc(props: {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.columns___82XqL)}>
-            <div className={classNames(projectcss.all, sty.column__jmd68)}>
-              <Logo
-                data-plasmic-name={"logo"}
-                data-plasmic-override={overrides.logo}
-                className={classNames("__wab_instance", sty.logo)}
-              />
-            </div>
+          {true ? (
+            <div className={classNames(projectcss.all, sty.columns___82XqL)}>
+              <div className={classNames(projectcss.all, sty.column__jmd68)}>
+                <Logo
+                  data-plasmic-name={"logo"}
+                  data-plasmic-override={overrides.logo}
+                  className={classNames("__wab_instance", sty.logo)}
+                />
+              </div>
 
-            <div className={classNames(projectcss.all, sty.column__wbfVv)}>
-              <div className={classNames(projectcss.all, sty.columns__cncf)}>
-                {(
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
+              <div className={classNames(projectcss.all, sty.column__wbfVv)}>
+                <div className={classNames(projectcss.all, sty.columns__cncf)}>
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(projectcss.all, sty.column__okY2E)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "iPadMini")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            sty.link__zaAHa
+                          )}
+                          component={Link}
+                          href={"https://www.plasmic.app/" as const}
+                          platform={"nextjs"}
+                        >
+                          {"KUNDENSERVICE"}
+                        </p.PlasmicLink>
+                      ) : null}
+                    </div>
+                  ) : null}
+
                   <div
-                    className={classNames(projectcss.all, sty.column__okY2E)}
+                    className={classNames(projectcss.all, sty.column__sonC8)}
                   >
                     <p.PlasmicLink
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
                         projectcss.__wab_text,
-                        sty.link__zaAHa
+                        sty.link___6XRsO
                       )}
                       component={Link}
                       href={"https://www.plasmic.app/" as const}
                       platform={"nextjs"}
                     >
-                      {"KUNDENSERVICE"}
+                      {"LOGIN"}
                     </p.PlasmicLink>
                   </div>
-                ) : null}
-
-                <div className={classNames(projectcss.all, sty.column__sonC8)}>
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link___6XRsO
-                    )}
-                    component={Link}
-                    href={"https://www.plasmic.app/" as const}
-                    platform={"nextjs"}
-                  >
-                    {"LOGIN"}
-                  </p.PlasmicLink>
                 </div>
               </div>
             </div>
-          </div>
-
+          ) : null}
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__vtHt)}>
               <div className={classNames(projectcss.all, sty.freeBox___2QFtn)}>
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"Hero Bluecard" as const}
                   className={classNames(sty.img__vhAhs)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
@@ -195,7 +230,7 @@ function PlasmicTestDe__RenderFunc(props: {
                 />
 
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"Hero Bluecard premium " as const}
                   className={classNames(sty.img__prLv9)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
@@ -223,6 +258,8 @@ function PlasmicTestDe__RenderFunc(props: {
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? ("299px" as const)
+                    : hasVariant(globalVariants, "screen", "iPadMini")
+                    ? ("300px" as const)
                     : hasVariant(globalVariants, "screen", "tablet")
                     ? ("529px" as const)
                     : ("638px" as const)
@@ -248,6 +285,8 @@ function PlasmicTestDe__RenderFunc(props: {
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? ("258px" as const)
+                      : hasVariant(globalVariants, "screen", "iPadMini")
+                      ? ("258px" as const)
                       : hasVariant(globalVariants, "screen", "tablet")
                       ? ("457px" as const)
                       : ("550px" as const)
@@ -268,7 +307,7 @@ function PlasmicTestDe__RenderFunc(props: {
               ) : null}
 
               <p.PlasmicImg
-                alt={""}
+                alt={"Arrow up in graffiti style" as const}
                 className={classNames(sty.img__opn3C)}
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -281,6 +320,8 @@ function PlasmicTestDe__RenderFunc(props: {
                 displayMinWidth={"0" as const}
                 displayWidth={
                   hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("279px" as const)
+                    : hasVariant(globalVariants, "screen", "iPadMini")
                     ? ("279px" as const)
                     : hasVariant(globalVariants, "screen", "tablet")
                     ? ("517px" as const)
@@ -327,33 +368,19 @@ function PlasmicTestDe__RenderFunc(props: {
                   className={classNames(sty.img__i8TJs)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "iPadMini")
+                      ? ("75%" as const)
+                      : ("100%" as const)
+                  }
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
                     src: "/plasmic/plasmic_test/images/graphityHeropng.png",
-                    fullWidth: 382,
-                    fullHeight: 419,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__d4Mv)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/plasmic_test/images/boomHeropng.png",
-                    fullWidth: 359,
-                    fullHeight: 295,
+                    fullWidth: 367,
+                    fullHeight: 357,
                     aspectRatio: undefined
                   }}
                 />
@@ -414,10 +441,14 @@ function PlasmicTestDe__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox___5ZcJj)}
             >
               {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "iPadMini")
+                  ? true
+                  : true
               ) ? (
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"Graffiti motive" as const}
                   className={classNames(sty.img__oU2Yu)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
@@ -441,10 +472,14 @@ function PlasmicTestDe__RenderFunc(props: {
               />
 
               {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "iPadMini")
+                  ? true
+                  : true
               ) ? (
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"Arrow in graffiti style" as const}
                   className={classNames(sty.img__cO7Ja)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
@@ -615,10 +650,14 @@ function PlasmicTestDe__RenderFunc(props: {
               className={classNames(projectcss.all, sty.freeBox__aNptE)}
             >
               {(
-                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : hasVariant(globalVariants, "screen", "iPadMini")
+                  ? true
+                  : true
               ) ? (
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"Graffiti motives " as const}
                   className={classNames(sty.img__rNn8M)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
@@ -725,8 +764,8 @@ function PlasmicTestDe__RenderFunc(props: {
                   loading={"lazy" as const}
                   src={{
                     src: "/plasmic/plasmic_test/images/graphityHeropng.png",
-                    fullWidth: 382,
-                    fullHeight: 419,
+                    fullWidth: 367,
+                    fullHeight: 357,
                     aspectRatio: undefined
                   }}
                 />
@@ -877,7 +916,25 @@ function PlasmicTestDe__RenderFunc(props: {
                 }
               </div>
             }
-          />
+          >
+            <p.PlasmicImg
+              alt={"Bluecard debit" as const}
+              className={classNames(sty.img__ylPtq)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"628px" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/plasmic_test/images/section4Card1Pngpng.png",
+                fullWidth: 630,
+                fullHeight: 506,
+                aspectRatio: undefined
+              }}
+            />
+          </PackagesSections>
 
           <div
             data-plasmic-name={"packagesSection2"}
@@ -886,7 +943,7 @@ function PlasmicTestDe__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.column__qmdly)}>
               <p.PlasmicImg
-                alt={""}
+                alt={"Bluecard premium" as const}
                 className={classNames(sty.img__xC7Ua)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
@@ -977,17 +1034,25 @@ function PlasmicTestDe__RenderFunc(props: {
             </div>
           </div>
 
-          <div className={classNames(projectcss.all, sty.columns__eIoyc)}>
+          <div
+            data-plasmic-name={"section5"}
+            data-plasmic-override={overrides.section5}
+            className={classNames(projectcss.all, sty.section5)}
+          >
             <div className={classNames(projectcss.all, sty.column__lgwc4)}>
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"smile face in graffiti style " as const}
                   className={classNames(sty.img__tLZt)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "iPadMini")
+                      ? ("80%" as const)
+                      : ("100%" as const)
+                  }
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
                   displayWidth={"auto" as const}
@@ -1023,11 +1088,15 @@ function PlasmicTestDe__RenderFunc(props: {
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
                 <p.PlasmicImg
-                  alt={""}
+                  alt={"Graffiti motive" as const}
                   className={classNames(sty.img__wa4B)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "iPadMini")
+                      ? ("80%" as const)
+                      : ("100%" as const)
+                  }
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
                   displayWidth={"auto" as const}
@@ -1043,12 +1112,399 @@ function PlasmicTestDe__RenderFunc(props: {
             </div>
           </div>
 
-          <div className={classNames(projectcss.all, sty.columns__v80S)}>
+          <p.Stack
+            as={"div"}
+            data-plasmic-name={"section6"}
+            data-plasmic-override={overrides.section6}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.section6)}
+          >
             <div className={classNames(projectcss.all, sty.column__cSHg)}>
-              <div className={classNames(projectcss.all, sty.freeBox__j6TQg)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__j6TQg)}
+              >
+                <InfoIconText
+                  className={classNames(
+                    "__wab_instance",
+                    sty.infoIconText__mkHkw
+                  )}
+                  slot2={
+                    "Das Warten auf den Flug ist dir zu langweilig? Mit deiner Bluecard Premium vertreibst du dir die Zeit in exklusiven Airport Lounges weltweit."
+                  }
+                >
+                  <p.PlasmicImg
+                    alt={"Plain icon in graffiti style" as const}
+                    className={classNames(sty.img__xcB)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/plasmic_test/images/sec6Image1Png.png",
+                      fullWidth: 193,
+                      fullHeight: 192,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </InfoIconText>
+
+                <RedLink
+                  className={classNames("__wab_instance", sty.redLink___7WEff)}
+                />
+              </p.Stack>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__d1Vo7)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__qEvXa)}
+              >
+                <InfoIconText
+                  className={classNames(
+                    "__wab_instance",
+                    sty.infoIconText__nqE8
+                  )}
+                  slot={"VERSICHERUNGSPAKET"}
+                  slot2={
+                    "Dein Flug hat Verspätung oder du hast deinen Schlüssel verloren? Kein Problem mit deiner Bluecard Premium! Mit unseren 11 Versicherungsleistungen bist du in allen Lebenslagen abgesichert. "
+                  }
+                >
+                  <p.PlasmicImg
+                    alt={"insurance icon in graffiti style" as const}
+                    className={classNames(sty.img___8QdRo)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/plasmic_test/images/sec6Image2Png.png",
+                      fullWidth: 178,
+                      fullHeight: 195,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </InfoIconText>
+
+                <RedLink
+                  className={classNames("__wab_instance", sty.redLink__e4JRp)}
+                />
+              </p.Stack>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__kLFn)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__tvRgg)}
+              >
+                <InfoIconText
+                  className={classNames(
+                    "__wab_instance",
+                    sty.infoIconText__rVxo8
+                  )}
+                  slot={"CONCIERGE SERVICE"}
+                  slot2={
+                    "Ob Reservierung in deiner Lieblingsbar oder dem Ticketkauf für ein Festival - dein persönlicher Assistent steht dir jeden Tag zur Verfügung und unterstützt dich in allen Situationen. "
+                  }
+                >
+                  <p.PlasmicImg
+                    alt={"Concierge icon in graffiti style" as const}
+                    className={classNames(sty.img__kLpT6)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/plasmic_test/images/sec6Image3Png.png",
+                      fullWidth: 178,
+                      fullHeight: 195,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </InfoIconText>
+
+                <RedLink
+                  className={classNames("__wab_instance", sty.redLink__rEfU)}
+                />
+              </p.Stack>
+            </div>
+          </p.Stack>
+
+          <div
+            data-plasmic-name={"section7"}
+            data-plasmic-override={overrides.section7}
+            className={classNames(projectcss.all, sty.section7)}
+          >
+            <div className={classNames(projectcss.all, sty.column__pSUgA)}>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={"Arrow in graffiti style" as const}
+                  className={classNames(sty.img__oxDhS)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "iPadMini")
+                      ? ("80%" as const)
+                      : ("100%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/plasmic_test/images/sec7Image1Png.png",
+                    fullWidth: 138,
+                    fullHeight: 160,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__a0Wz)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vzVuV
+                )}
+              >
+                {hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "DEINE VORTEILE \nMIT DER \nBLUECARD PREMIUM"
+                  : hasVariant(globalVariants, "screen", "tablet")
+                  ? "DEINE VORTEILE MIT \nDER BLUECARD PREMIUM"
+                  : "WÄHLE DEINE BLUECARD"}
+              </div>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column__iLj8M)}>
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={"Heart in graffiti style" as const}
+                  className={classNames(sty.img__xN2Ea)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "iPadMini")
+                      ? ("80%" as const)
+                      : ("100%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/plasmic_test/images/sec7Image2Png.png",
+                    fullWidth: 114,
+                    fullHeight: 115,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+            </div>
+          </div>
+
+          <div
+            data-plasmic-name={"section8"}
+            data-plasmic-override={overrides.section8}
+            className={classNames(projectcss.all, sty.section8)}
+          >
+            <div className={classNames(projectcss.all, sty.column__iFbS3)}>
+              <div className={classNames(projectcss.all, sty.freeBox__kw38)}>
+                <ComparisonTableCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.comparisonTableCard__djrzH
+                  )}
+                />
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__tvSv6)}>
+                <div className={classNames(projectcss.all, sty.freeBox__hQdIq)}>
+                  <ComparisonTableRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.comparisonTableRow__gEdnR
+                    )}
+                    slot2={"Kunststoffkarte"}
+                  />
+
+                  <ComparisonTableRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.comparisonTableRow__kpNbv
+                    )}
+                    slot={"Girokonto"}
+                    slot2={"Inbegriffen"}
+                  >
+                    <Section8Icon2SvgIcon
+                      className={classNames(projectcss.all, sty.svg___4HfO)}
+                      role={"img"}
+                    />
+                  </ComparisonTableRow>
+
+                  <ComparisonTableRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.comparisonTableRow__xblDo
+                    )}
+                    slot={"Vollwertige Mastercard®"}
+                    slot2={"Millionen Akzeptanzstellen"}
+                  >
+                    <Section8Icon3SvgIcon
+                      className={classNames(projectcss.all, sty.svg___7QyyY)}
+                      role={"img"}
+                    />
+                  </ComparisonTableRow>
+
+                  <ComparisonTableRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.comparisonTableRow___3BTg
+                    )}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__dc1ZI
+                        )}
+                      >
+                        {"Concierge Service"}
+                      </div>
+                    }
+                    slot2={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___7JmIf
+                        )}
+                      >
+                        {"Nicht inbegriffen"}
+                      </div>
+                    }
+                  >
+                    <Section8Icon4AsvgIcon
+                      className={classNames(projectcss.all, sty.svg__xz32Y)}
+                      role={"img"}
+                    />
+                  </ComparisonTableRow>
+
+                  <ComparisonTableRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.comparisonTableRow__zA09
+                    )}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nnJhb
+                        )}
+                      >
+                        {"Versicherungspaket"}
+                      </div>
+                    }
+                    slot2={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___6PuLw
+                        )}
+                      >
+                        {"Nicht inbegriffen"}
+                      </div>
+                    }
+                  >
+                    <Section8Icon5AsvgIcon
+                      className={classNames(projectcss.all, sty.svg___9Lc)}
+                      role={"img"}
+                    />
+                  </ComparisonTableRow>
+
+                  <ComparisonTableRow
+                    className={classNames(
+                      "__wab_instance",
+                      sty.comparisonTableRow__uaesl
+                    )}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__lw6G
+                        )}
+                      >
+                        {"Airport Lounge Zugang"}
+                      </div>
+                    }
+                    slot2={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__c7QhZ
+                        )}
+                      >
+                        {"Nicht inbegriffen"}
+                      </div>
+                    }
+                  >
+                    <Section8Icon6AsvgIcon
+                      className={classNames(projectcss.all, sty.svg___8AoOi)}
+                      role={"img"}
+                    />
+                  </ComparisonTableRow>
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button__oRzw)}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column___4ZCvi)}>
+              <ComparisonTableCard
+                className={classNames(
+                  "__wab_instance",
+                  sty.comparisonTableCard___5Dt3G
+                )}
+                slot={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__o11Hx
+                    )}
+                  >
+                    {"BLUECARD PREMIUM"}
+                  </div>
+                }
+                slot2={"11,99 € pro Monat"}
+                slot3={"59,90 € Ausgabegebühr"}
+              >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__xeBYr)}
+                  className={classNames(sty.img__zt7V4)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"100%" as const}
@@ -1057,53 +1513,245 @@ function PlasmicTestDe__RenderFunc(props: {
                   displayWidth={"auto" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/plasmic_test/images/sec6Image1Png.png",
-                    fullWidth: 193,
-                    fullHeight: 192,
+                    src: "/plasmic/plasmic_test/images/section8Card2Png.png",
+                    fullWidth: 327,
+                    fullHeight: 200,
                     aspectRatio: undefined
                   }}
                 />
+              </ComparisonTableCard>
 
-                <div
+              <div className={classNames(projectcss.all, sty.freeBox__bPfd8)}>
+                <ComparisonTableRow
                   className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__opwgD
+                    "__wab_instance",
+                    sty.comparisonTableRow___9HlFz
                   )}
-                >
-                  {"Enter some text"}
-                </div>
+                  slot2={"Kunststoffkarte"}
+                />
 
-                <div
+                <ComparisonTableRow
                   className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__jgQN
+                    "__wab_instance",
+                    sty.comparisonTableRow__tCgsF
                   )}
+                  slot={"Girokonto"}
+                  slot2={"Inbegriffen"}
                 >
-                  {"Enter some text"}
-                </div>
+                  <Section8Icon2SvgIcon
+                    className={classNames(projectcss.all, sty.svg__r1QUz)}
+                    role={"img"}
+                  />
+                </ComparisonTableRow>
 
-                <p.PlasmicLink
+                <ComparisonTableRow
                   className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__ukMke
+                    "__wab_instance",
+                    sty.comparisonTableRow__rr2Va
                   )}
-                  component={Link}
-                  href={"https://www.plasmic.app/" as const}
-                  platform={"nextjs"}
+                  slot={"Vollwertige Mastercard®"}
+                  slot2={"Millionen Akzeptanzstellen"}
                 >
-                  {"Some link text"}
-                </p.PlasmicLink>
+                  <Section8Icon3SvgIcon
+                    className={classNames(projectcss.all, sty.svg__mJgR2)}
+                    role={"img"}
+                  />
+                </ComparisonTableRow>
+
+                <ComparisonTableRow
+                  className={classNames(
+                    "__wab_instance",
+                    sty.comparisonTableRow___5T4Ii
+                  )}
+                  slot={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__qfwJ2
+                      )}
+                    >
+                      {"Concierge Service"}
+                    </div>
+                  }
+                  slot2={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__pAy0C
+                      )}
+                    >
+                      {"Inbegriffen"}
+                    </div>
+                  }
+                >
+                  <Section8Icon4BsvgIcon
+                    className={classNames(projectcss.all, sty.svg__dy5O2)}
+                    role={"img"}
+                  />
+                </ComparisonTableRow>
+
+                <ComparisonTableRow
+                  className={classNames(
+                    "__wab_instance",
+                    sty.comparisonTableRow__mcVzR
+                  )}
+                  slot={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gDt1C
+                      )}
+                    >
+                      {"Versicherungspaket"}
+                    </div>
+                  }
+                  slot2={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___3ZoVr
+                      )}
+                    >
+                      {"Platinum Package "}
+                    </div>
+                  }
+                >
+                  <Section8Icon5BsvgIcon
+                    className={classNames(projectcss.all, sty.svg__jeJsE)}
+                    role={"img"}
+                  />
+                </ComparisonTableRow>
+
+                <ComparisonTableRow
+                  className={classNames(
+                    "__wab_instance",
+                    sty.comparisonTableRow__hsEc
+                  )}
+                  slot={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__wpMVr
+                      )}
+                    >
+                      {"Airport Lounge Zugang"}
+                    </div>
+                  }
+                  slot2={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__o8Sun
+                      )}
+                    >
+                      {"Gebührenpflichtig"}
+                    </div>
+                  }
+                >
+                  <Section8Icon6BsvgIcon
+                    className={classNames(projectcss.all, sty.svg__z7Hn2)}
+                    role={"img"}
+                  />
+                </ComparisonTableRow>
               </div>
+
+              <Button
+                className={classNames("__wab_instance", sty.button__jqx95)}
+              />
             </div>
-
-            <div className={classNames(projectcss.all, sty.column__d1Vo7)} />
-
-            <div className={classNames(projectcss.all, sty.column__kLFn)} />
           </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__bCsgb)}>
+            <CompprYoawes6D
+              data-plasmic-name={"dsFooter"}
+              data-plasmic-override={overrides.dsFooter}
+              className={classNames("__wab_instance", sty.dsFooter)}
+              data={{
+                copyright: {
+                  title:
+                    "XPAY Solutions GmbH - exklusiver Vertriebspartnerfür die BLUECARD",
+                  body: "Mastercard® ist eine eingetragene Marke, und das Kreismuster ist eine Marke von Mastercard® International Incorporated. Die BLUECARD wird von der PayCenterGmbH gemäß der Lizenz von Mastercard® International Inc. herausgegeben."
+                },
+                footnote: "",
+                footerLinks: [
+                  {
+                    title: "Quick links",
+                    id: "id123",
+                    links: [
+                      {
+                        text: "Kundenservice",
+                        url: "/",
+                        isExternal: false,
+                        ariaLabel: "Kundenservice link"
+                      },
+                      {
+                        text: "Preisliste",
+                        url: "/",
+                        isExternal: false,
+                        ariaLabel: "Preisliste link"
+                      },
+                      {
+                        text: "Login",
+                        url: "/",
+                        isExternal: true,
+                        ariaLabel: "Login link"
+                      }
+                    ]
+                  },
+                  {
+                    title: "BLUECARD",
+                    id: "id456",
+                    links: [
+                      {
+                        text: "Rechtliche Dokumente",
+                        url: "/",
+                        isExternal: false,
+                        ariaLabel: "Rechtliche Dokumente link"
+                      },
+                      {
+                        text: "Impressum",
+                        url: "/",
+                        isExternal: false,
+                        ariaLabel: "Impressum link"
+                      },
+                      {
+                        text: "089 998298612 ",
+                        url: "/",
+                        isExternal: true,
+                        icon: "phone",
+                        ariaLabel: "tel"
+                      }
+                    ]
+                  }
+                ]
+              }}
+            />
+          </div>
+
+          <CompXpMnCrayC
+            data-plasmic-name={"dsNav"}
+            data-plasmic-override={overrides.dsNav}
+            className={classNames("__wab_instance", sty.dsNav)}
+            navData={{
+              logo: {
+                width: "100px",
+                height: "100px",
+                src: "/images/nav/bluecard-logo.svg",
+                alt: "image",
+                href: "/imageee"
+              },
+              navLinks: [
+                { href: "/", text: "Home", linkTarget: "_blank" },
+                { href: "/", text: "About", linkTarget: "_blank" }
+              ]
+            }}
+          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -1111,11 +1759,29 @@ function PlasmicTestDe__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "logo", "testSection", "packagesSections", "packagesSection2"],
+  root: [
+    "root",
+    "logo",
+    "testSection",
+    "packagesSections",
+    "packagesSection2",
+    "section5",
+    "section6",
+    "section7",
+    "section8",
+    "dsFooter",
+    "dsNav"
+  ],
   logo: ["logo"],
   testSection: ["testSection"],
   packagesSections: ["packagesSections"],
-  packagesSection2: ["packagesSection2"]
+  packagesSection2: ["packagesSection2"],
+  section5: ["section5"],
+  section6: ["section6"],
+  section7: ["section7"],
+  section8: ["section8"],
+  dsFooter: ["dsFooter"],
+  dsNav: ["dsNav"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1126,6 +1792,12 @@ type NodeDefaultElementType = {
   testSection: "div";
   packagesSections: typeof PackagesSections;
   packagesSection2: "div";
+  section5: "div";
+  section6: "div";
+  section7: "div";
+  section8: "div";
+  dsFooter: typeof CompprYoawes6D;
+  dsNav: typeof CompXpMnCrayC;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1189,6 +1861,12 @@ export const PlasmicTestDe = Object.assign(
     testSection: makeNodeComponent("testSection"),
     packagesSections: makeNodeComponent("packagesSections"),
     packagesSection2: makeNodeComponent("packagesSection2"),
+    section5: makeNodeComponent("section5"),
+    section6: makeNodeComponent("section6"),
+    section7: makeNodeComponent("section7"),
+    section8: makeNodeComponent("section8"),
+    dsFooter: makeNodeComponent("dsFooter"),
+    dsNav: makeNodeComponent("dsNav"),
 
     // Metadata about props expected for PlasmicTestDe
     internalVariantProps: PlasmicTestDe__VariantProps,

@@ -19,6 +19,12 @@
   width: calc((100% - 2 * 0px) * 5 / 12);
 }
 @media (max-width: 1024px) {
+  .root {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media (max-width: 1024px) {
   .root > :nth-child(2n + 1) {
     width: calc((100% - 2 * 0px) * 7 / 12);
   }
@@ -28,7 +34,7 @@
     width: calc((100% - 2 * 0px) * 5 / 12);
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 425px) {
   .root {
     width: 100%;
     height: auto;
@@ -37,7 +43,7 @@
     min-width: 0;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 425px) {
   .root > :nth-child(1n + 1) {
     width: calc((100% - 1 * 0px) * 12 / 12);
   }
@@ -70,7 +76,7 @@
     align-items: center;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 425px) {
   .column__gYlkh {
     align-items: stretch;
   }
@@ -197,12 +203,13 @@
     justify-content: center;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 425px) {
   .column__g8RKo {
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 425px) {
   .slotTargetChildren {
     text-align: left;
   }

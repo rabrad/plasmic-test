@@ -69,6 +69,7 @@ function PlasmicLogo__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+  const $props = props.args;
 
   return (
     true ? (
@@ -87,7 +88,7 @@ function PlasmicLogo__RenderFunc(props: {
           sty.root
         )}
         component={Link}
-        href={"/de" as const}
+        href={"/" as const}
         platform={"nextjs"}
       >
         <LogosvgIcon

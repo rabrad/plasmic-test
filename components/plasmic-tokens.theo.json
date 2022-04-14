@@ -91,6 +91,16 @@
       }
     },
     {
+      "name": "grey-20",
+      "type": "color",
+      "value": "#BBBABB",
+      "category": "color",
+      "meta": {
+        "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+        "id": "oniif-ydF"
+      }
+    },
+    {
       "name": "grey10",
       "type": "color",
       "value": "#E8E8E8",

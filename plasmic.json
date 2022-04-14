@@ -56,26 +56,13 @@
           "plumeType": "button"
         },
         {
-          "id": "oC9KOZtsJNg9",
-          "name": "TestEn",
-          "type": "managed",
-          "projectId": "b1jHtzznz5qfWCWxvSbcUi",
-          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicTestEn.tsx",
-          "importSpec": {
-            "modulePath": "../pages/index.tsx"
-          },
-          "cssFilePath": "plasmic/plasmic_test/PlasmicTestEn.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "WCbkjhEoR2t",
           "name": "TestDe",
           "type": "managed",
           "projectId": "b1jHtzznz5qfWCWxvSbcUi",
           "renderModuleFilePath": "plasmic/plasmic_test/PlasmicTestDe.tsx",
           "importSpec": {
-            "modulePath": "../pages/de.tsx"
+            "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/plasmic_test/PlasmicTestDe.module.css",
           "scheme": "blackbox",
@@ -117,6 +104,58 @@
             "modulePath": "PackagesSections.tsx"
           },
           "cssFilePath": "plasmic/plasmic_test/PlasmicPackagesSections.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "XRqk_ZzmpW",
+          "name": "RedLink",
+          "type": "managed",
+          "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicRedLink.tsx",
+          "importSpec": {
+            "modulePath": "RedLink.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_test/PlasmicRedLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "hPX9FO2ErV",
+          "name": "InfoIconText",
+          "type": "managed",
+          "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicInfoIconText.tsx",
+          "importSpec": {
+            "modulePath": "InfoIconText.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_test/PlasmicInfoIconText.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TciHbiRyoi",
+          "name": "ComparisonTableRow",
+          "type": "managed",
+          "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicComparisonTableRow.tsx",
+          "importSpec": {
+            "modulePath": "ComparisonTableRow.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_test/PlasmicComparisonTableRow.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "1ThabWFZHA",
+          "name": "ComparisonTableCard",
+          "type": "managed",
+          "projectId": "b1jHtzznz5qfWCWxvSbcUi",
+          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicComparisonTableCard.tsx",
+          "importSpec": {
+            "modulePath": "ComparisonTableCard.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_test/PlasmicComparisonTableCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -176,14 +215,59 @@
           "id": "KbRrj-8yN",
           "name": "MasterCardIconsvgIcon",
           "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__MasterCardIconsvg.tsx"
+        },
+        {
+          "id": "wPntU_KHu",
+          "name": "Section8Icon1SvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon1Svg.tsx"
+        },
+        {
+          "id": "NiTNl6egg",
+          "name": "Section8Icon2SvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon2Svg.tsx"
+        },
+        {
+          "id": "vTbzVlJuR",
+          "name": "Section8Icon3SvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon3Svg.tsx"
+        },
+        {
+          "id": "mYN6LrPP0",
+          "name": "Section8Icon4AsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon4Asvg.tsx"
+        },
+        {
+          "id": "8ZBL7JeNm",
+          "name": "Section8Icon4BsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon4Bsvg.tsx"
+        },
+        {
+          "id": "wObOM94cD",
+          "name": "Section8Icon5AsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon5Asvg.tsx"
+        },
+        {
+          "id": "ojh8kIx7p",
+          "name": "Section8Icon5BsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon5Bsvg.tsx"
+        },
+        {
+          "id": "xatTaGG_J",
+          "name": "Section8Icon6AsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon6Asvg.tsx"
+        },
+        {
+          "id": "mt0C_tznX",
+          "name": "Section8Icon6BsvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Section8Icon6Bsvg.tsx"
+        },
+        {
+          "id": "HsMROCbmE",
+          "name": "PhonesvgIcon",
+          "moduleFilePath": "plasmic/plasmic_test/icons/PlasmicIcon__Phonesvg.tsx"
         }
       ],
       "images": [
-        {
-          "id": "ZiesuSfx-Lua5",
-          "name": "image.png",
-          "filePath": "../public/plasmic/plasmic_test/images/imagepng.jpeg"
-        },
         {
           "id": "plMgxT8eI",
           "name": "Pfeil1 1.png",
@@ -283,11 +367,52 @@
           "id": "yidXm4jDx",
           "name": "sec-6-image-3.png",
           "filePath": "../public/plasmic/plasmic_test/images/sec6Image3Png.png"
+        },
+        {
+          "id": "W9ZZaIvpX",
+          "name": "sec-7-image-1.png",
+          "filePath": "../public/plasmic/plasmic_test/images/sec7Image1Png.png"
+        },
+        {
+          "id": "956a7aeX2",
+          "name": "sec-7-image-2.png",
+          "filePath": "../public/plasmic/plasmic_test/images/sec7Image2Png.png"
+        },
+        {
+          "id": "aVa6wo2az",
+          "name": "section-8-card-1.png",
+          "filePath": "../public/plasmic/plasmic_test/images/section8Card1Png.png"
+        },
+        {
+          "id": "udb4wWBMj",
+          "name": "section-8-card-2.png",
+          "filePath": "../public/plasmic/plasmic_test/images/section8Card2Png.png"
+        },
+        {
+          "id": "uQtPX-Opf",
+          "name": "site-bg.jpeg",
+          "filePath": "../public/plasmic/plasmic_test/images/siteBgjpeg.jpeg"
         }
       ],
       "indirect": false,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [
+        {
+          "id": "prYoawes6d",
+          "name": "CompprYoawes6D",
+          "componentImportPath": ""
+        },
+        {
+          "id": "rJXVps9vCb",
+          "name": "ComprJxVps9VCb",
+          "componentImportPath": ""
+        },
+        {
+          "id": "XPMnCray-c",
+          "name": "CompXpMnCrayC",
+          "componentImportPath": ""
+        }
+      ]
     }
   ],
   "globalVariants": {
